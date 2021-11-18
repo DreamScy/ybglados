@@ -1,8 +1,8 @@
 import requests ,os,json
 # server酱开关，填0不开启(默认)，填2同时开启cookie失效通知和签到成功通知
-sever = 'off'
+sever = 'on'
 # 填写server酱sckey,不开启server酱则不用填（自己更改）
-sckey = ''
+sckey = 'SCT96095Tq6JopnCx5Scz9j4cKGKq0Zne'
 # 填入glados账号对应cookie
 cookie = ''
 referer = 'https://glados.rocks/console/checkin'
@@ -18,9 +18,9 @@ def start():
     }
     
     dict = {}
-    dict['key1'] = "first_cookie"
-    dict['key2'] = "second_cookie"
-    dict['key3'] = "third_cookie"
+    dict['961429020_qq'] = "_ga=GA1.2.85446469.1637209891; _gid=GA1.2.511845243.1637209891; koa:sess=eyJ1c2VySWQiOjExMTMwMSwiX2V4cGlyZSI6MTY2MzEyOTkzMDc2MywiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=mF5vlgvhyHUGgvbs97X14lsQkno"
+    # dict['key2'] = "second_cookie"
+    # dict['key3'] = "third_cookie"
     
     for key in dict:
         checkin = requests.post(url,headers={'cookie': dict[key] ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
