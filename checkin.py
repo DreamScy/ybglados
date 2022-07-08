@@ -14,11 +14,11 @@ def start():
     referer = "https://glados.rocks/console/checkin"
     useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
     payload={
-        'token': 'glados_network'
+        'token': 'glados.network'
     }
     
     dict = {}
-    dict['961429020_qq'] = "_ga=GA1.2.85446469.1637209891; _gid=GA1.2.511845243.1637209891; koa:sess=eyJ1c2VySWQiOjExMTMwMSwiX2V4cGlyZSI6MTY2MzEyOTkzMDc2MywiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=mF5vlgvhyHUGgvbs97X14lsQkno"
+    dict['961429020_qq'] = "_ga=GA1.2.719739536.1657279147; _gid=GA1.2.1832563000.1657279147; __cf_bm=DBzoX_Bmqa4lDOx8n00bq1Sbi68BCSr9fZpRcLbDslE-1657279147-0-Ad9OzwKMSQvIaVCgoGMg6KnChNAsg/BfN81XPm1BHh5DIq6NKAqXEbKK+9jLtiu/1TJyP2pYSVhnxqYINRweveRaZqOgm0LHl4+BMTlummWanJvF9ycLTM94rjsKbfY1Yw==; koa:sess=eyJ1c2VySWQiOjExMTMwMSwiX2V4cGlyZSI6MTY4MzE5OTE5NTkxMiwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=KH2j6s6a7-9H4_mMLcVg0HnZhrM"
     # dict['key2'] = "second_cookie"
     # dict['key3'] = "third_cookie"
     
