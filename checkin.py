@@ -25,6 +25,7 @@ def start():
     for key in dict:
         checkin = requests.post(url,headers={'cookie': dict[key] ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
         state =  requests.get(url2,headers={'cookie': dict[key] ,'referer': referer,'origin':origin,'user-agent':useragent})
+        print("---------------------log-------------------")
         print(checkin.text)
         if 'message' in checkin.text:
             mess = checkin.json()['message']
