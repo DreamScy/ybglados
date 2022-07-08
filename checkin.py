@@ -25,14 +25,14 @@ def start():
     for key in dict:
         checkin = requests.post(url,headers={'cookie': dict[key] ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
         state =  requests.get(url2,headers={'cookie': dict[key] ,'referer': referer,'origin':origin,'user-agent':useragent})
-
+        print(checkin.text)
         if 'message' in checkin.text:
             mess = checkin.json()['message']
             if mess == '\u6ca1\u6709\u6743\u9650':
                 requests.get('https://sc.ftqq.com/' + sckey + '.send?text=' + key + '账号cookie过期')
             time = state.json()['data']['leftDays']
             time = time.split('.')[0]
-            #print(time)
+            print(time)
             messStr = key + ', ' + mess
             notice(time,sckey,sever,messStr)
 
